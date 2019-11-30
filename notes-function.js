@@ -45,7 +45,7 @@ const generateNoteDom = (note) => {
     //     renderNotes(books, filters)
     // })
     noteEL.appendChild(textEL)
-    noteEL.setAttribute('href', `/edit.html#${note.id}`)
+    noteEL.setAttribute('href', `/notesApp/edit.html#${note.id}`)
     noteEL.classList.add('list-item')
 
     statusEL.textContent = generateLastEdited(note.updatedAt)

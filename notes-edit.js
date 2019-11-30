@@ -34,7 +34,7 @@ bodyElement.addEventListener('input', (e) => {
 removeElement.addEventListener('click', (e) => {
     removeNote(note.id)
     saveNotes(books)
-    location.assign('/index.html')
+    location.assign('/notesApp/index.html')
 })
 
 window.addEventListener('storage', (e) =>{
@@ -43,7 +43,7 @@ window.addEventListener('storage', (e) =>{
         let note = books.find((el) => el.id === noteID)
 
         if (note === undefined) {
-            location.assign('/index.html')
+            location.assign('/notesApp/index.html')
         }
 
         titleElement.value = note.title
