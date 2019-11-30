@@ -20,7 +20,7 @@ document.querySelector('#create-note').addEventListener('click', (e) => {
         updatedAt : timestamp
     })
     localStorage.setItem('books', JSON.stringify(books))
-    location.assign(`/edit.html#${iden}`)
+    location.assign(`/notesApp/edit.html#${iden}`)
 })
 
 

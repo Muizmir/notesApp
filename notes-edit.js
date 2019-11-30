@@ -10,7 +10,7 @@ let books = getSavedNotes()
 let note = books.find((el) => el.id === noteID)
 
 if (note === undefined){
-    location.assign('/index.html')
+    location.assign('/notesApp/index.html')
 }
 
 titleElement.value = note.title
